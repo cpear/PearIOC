@@ -10,4 +10,17 @@ PearIoc looks through all of the types in your assembly and maps any that are im
 ## How to use it
 First downlaod the PearIoc.cs file and add it to your project.
 
-Next, in your startup file new it up and run it.
+Next, in your startup file new it up and run it:
+
+
+```c#
+public void ConfigureServices(IServiceCollection services)
+{
+    ...some code here...
+    
+    var ioc = new PearIoc(services);
+
+    ioc.WithStandardConvention();
+    ioc.RunConfigurations();
+}
+```
