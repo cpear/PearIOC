@@ -10,7 +10,7 @@ PearIoc looks through all of the types in your assembly and maps any that are im
 ## How to use it
 First downlaod the PearIoc.cs file and add it to your project.
 
-Next, in your startup file new it up and run it:
+Next, in the ConfigureServices() method of your startup.cs file new it up and run it:
 
 
 ```c#
