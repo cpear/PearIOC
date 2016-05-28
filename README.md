@@ -66,3 +66,6 @@ public void ConfigureServices(IServiceCollection services)
     ioc.RunConfigurations();
 }
 ```
+
+## Extensions
+- MediatR extension available for adding IOC settings for the MediatR library
